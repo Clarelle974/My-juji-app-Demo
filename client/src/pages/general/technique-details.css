@@ -1,0 +1,105 @@
+.techniques.details.top {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("/techniques.png");
+  & h2 {
+    top: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.technique-container {
+  background-color: var(--mediumgrey);
+  opacity: 0.99;
+  border-radius: 20px;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  width: 95%;
+  & h3 {
+    color: var(--contrast2);
+    font-size: 1rem;
+    margin: 0.5rem auto;
+  }
+  & p {
+    color: var(--contrast1);
+    background-color: var(--contrast2);
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  & select:focus {
+    outline: none;
+    border: none;
+  }
+  & select option {
+    padding: 1rem;
+    border: none;
+  }
+  & section.personal-notes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-items: end;
+    & div.personal-notes {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+      gap: 1rem;
+      & h3 {
+        text-align: left;
+      }
+    }
+    & form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      & input {
+        opacity: 0.7;
+        padding: 0.2rem 0.5rem;
+      }
+      & button.light-square.big-radius {
+        width: fit-content;
+        padding: 0.3rem;
+        margin-top: 0.3rem;
+      }
+    }
+    & .actions-icons {
+      background-color: var(--mediumgrey);
+      border-radius: 5px;
+      padding: 0.1rem;
+    }
+    & div.actions-icons {
+      display: flex;
+      width: fit-content;
+      margin-top: 1rem;
+      margin-left: auto;
+      justify-items: end;
+      background-color: var(--mediumgrey);
+      border-radius: 5px;
+      padding: 0.1rem;
+    }
+    & p {
+      opacity: 0.7;
+      padding: 0.2rem 0.5rem;
+    }
+    & h3 {
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+    & .light-square.big-radius {
+      padding: 0.1rem;
+      opacity: 0.8;
+      display: inline;
+    }
+  }
+}
+
+h3.display-belts {
+  color: var(--contrast1);
+  background-color: var(--contrast2);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}

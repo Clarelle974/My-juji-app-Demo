@@ -1,0 +1,9 @@
+footer {
+  & img {
+    width: 2rem;
+    object-fit: contain;
+  }
+  & p {
+    color: var(--contrast2);
+  }
+}

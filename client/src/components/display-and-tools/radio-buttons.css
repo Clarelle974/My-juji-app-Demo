@@ -1,0 +1,32 @@
+.display-radio {
+  display: flex;
+  border: none;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 95%;
+
+  div {
+    margin: 1rem 0.5rem 2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    label {
+      padding-left: 0.5rem;
+    }
+  }
+  & input[type="radio"]:after {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    top: -3px;
+    left: -2px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  & input[type="radio"]:checked:after {
+    background-color: var(--mediumcolor);
+  }
+}

@@ -1,0 +1,39 @@
+.home {
+  line-height: 2rem;
+  font-weight: 300;
+  & .banner {
+    margin-bottom: 2rem;
+  }
+  & section {
+    width: 95%;
+    margin: 0 auto;
+  }
+  & h3 {
+    font-weight: 400;
+    margin: 2rem 0;
+  }
+  & a {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  & ul {
+    list-style-type: square;
+    & li {
+      list-style-position: inside;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  & .banner {
+    & img {
+      top: -15vh;
+    }
+  }
+  .home a {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+}

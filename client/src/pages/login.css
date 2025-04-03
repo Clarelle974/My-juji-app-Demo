@@ -1,0 +1,22 @@
+.login {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.login img {
+  object-fit: contain;
+  height: 30vh;
+}
+.login h2 {
+  margin: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .login {
+    width: 70%;
+  }
+}
