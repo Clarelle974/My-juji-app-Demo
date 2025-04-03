@@ -1,13 +1,18 @@
-// to make the file a module and avoid the TypeScript error
-export type {};
+import type { JwtPayload } from "jsonwebtoken";
 
 declare global {
+  export type MyPayload = JwtPayload & { sub: string; user_role_id: number };
+
   namespace Express {
     export interface Request {
-      /* ************************************************************************* */
-      // Add your custom properties here, for example:
-      //
-      // user?: { ... }
+      auth: {
+        name: string;
+        isAdmin: boolean;
+      };
+      member: {
+        role: string;
+        id: number;
+      };
       /* ************************************************************************* */
     }
   }

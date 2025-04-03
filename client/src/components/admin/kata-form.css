@@ -1,0 +1,32 @@
+.sequence {
+  background-color: var(--contrast1);
+  font-weight: 600;
+}
+.technique-container .kata-technique {
+  select {
+    margin-top: 1rem;
+  }
+  & p {
+    background-color: inherit;
+    font-size: rem;
+    color: var(--contrast2);
+    font-weight: 300;
+  }
+}
+.rank_order_form {
+  display: flex;
+  align-items: center;
+  & h3 {
+    margin: 0 1rem 0 0;
+  }
+  & input {
+    display: flex;
+    width: 70%;
+  }
+}
+.kata-technique {
+  & p {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,145 @@
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0.5rem auto;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-items: center;
+  & li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 45vw;
+    height: 45vw;
+    border-radius: 10px;
+  }
+  & li.ukemi {
+    background: linear-gradient(rgba(9, 5, 60, 0.5), rgba(9, 5, 60, 0.9)),
+      url("/ukemi.png");
+    background-size: contain;
+  }
+  & li.atemi {
+    background: linear-gradient(rgba(1, 27, 85, 0.5), rgba(1, 27, 85, 0.8)),
+      url("/atemi.png");
+    background-size: contain;
+  }
+  & li.uke-waza {
+    background: linear-gradient(rgba(1, 27, 85, 0.5), rgba(1, 27, 85, 0.8)),
+      url("/uke-waza.png");
+    background-size: contain;
+  }
+  & li.tachi-waza {
+    background: linear-gradient(rgba(5, 1, 20, 0.5), rgba(5, 1, 20, 0.8)),
+      url("/tachi-waza.png");
+    background-size: contain;
+  }
+  & li.ne-waza {
+    background: linear-gradient(rgba(9, 5, 60, 0.5), rgba(9, 5, 60, 0.8)),
+      url("/ne-waza.png");
+    background-size: contain;
+  }
+  & li.dori-waza {
+    background: linear-gradient(rgba(1, 27, 85, 0.5), rgba(1, 27, 85, 0.8)),
+      url("/dori-waza.png");
+    background-size: contain;
+  }
+
+  & a.light-square {
+    padding: 0.5rem 1.5rem;
+    width: 30vw;
+    margin: 0 auto;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .1s ease-in-out;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-radius: 5px;
+  }
+  & .light-square:hover {
+    background-color: var(--strongcolor);
+    color: var(--contrast2);
+    border: none;
+    transform: none;
+  }
+}
+
+.techniques-by-category {
+  margin: 1rem;
+}
+
+ul.techniques-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-weight: 600;
+  margin: 0 auto;
+  gap: 1rem;
+  & li {
+    list-style-position: inside;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  & li:hover {
+    background-color: var(--mediumcolor);
+    color: var(--contrast2);
+    border: none;
+    transform: none;
+  }
+}
+
+.actions-buttons {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.techniques .light-square.big-radius {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & li {
+      width: 30vw;
+      height: 30vw;
+    }
+    & .light-square {
+      width: 30vw;
+    }
+    & a.light-square {
+      width: 20vw;
+    }
+  }
+
+  ul.techniques-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 600;
+    gap: 1rem;
+    margin-top: 2rem;
+    & li {
+      flex-wrap: wrap;
+      width: 25vw;
+      margin: 0;
+    }
+  }
+}

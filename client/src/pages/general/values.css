@@ -1,0 +1,61 @@
+.judo-values {
+  display: flex;
+  flex-direction: column;
+  & .content {
+    width: 95%;
+    margin: 2rem auto;
+    & p {
+      margin-top: 2rem;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  & h3 {
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  > h3,
+  p {
+    margin: 0.5rem 0;
+  }
+  & section.list-values {
+    background-color: var(--mediumgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    > h3 {
+      color: var(--hcolor);
+      font-weight: 500;
+      padding-bottom: 1rem;
+      width: 80%;
+      border-bottom: 5px solid var(--hcolor);
+      text-align: center;
+    }
+    & ul {
+      gap: 1rem;
+      padding: 0.5rem;
+      margin-top: 2rem;
+      color: var(--contrast2);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: center;
+    }
+    & li {
+      display: flex;
+      flex-direction: column;
+    }
+    & p {
+      text-align: left;
+      color: var(--hcolor);
+    }
+
+    & dfn {
+      font-weight: 500;
+    }
+  }
+}

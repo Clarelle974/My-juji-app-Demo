@@ -1,0 +1,186 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  flex: 1;
+  margin-top: 15vh;
+
+  & .profile-container {
+    & .desktop-display {
+      display: none;
+    }
+    & .mobile-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        max-height: 25vh;
+        object-fit: cover;
+        width: 100vw;
+      }
+      & h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+    > section {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      line-height: 2rem;
+      width: 100%;
+      & h3 {
+        margin: 0;
+        background-color: var(--contrast1);
+      }
+      > p {
+        text-align: center;
+      }
+      & form {
+        margin: 1rem;
+      }
+      & div {
+        /* display: flex;
+        width:95%;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 1rem;
+        border:solid red 2px; */
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        align-items: center;
+        gap: 0.5rem;
+        border-bottom: solid 1px rgb(225, 223, 223);
+      }
+      & div:last-of-type {
+        margin-top: 1rem;
+      }
+      & div.actions-icons {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        margin: 0;
+        padding-left: 2rem;
+        & img {
+          width: 1rem;
+        }
+      }
+      & p {
+        font-weight: 500;
+      }
+      & button .actions-buttons {
+        display: flex;
+        justify-items: flex-end;
+      }
+      & input {
+        padding: 0.2rem;
+        width: 90%;
+        margin-top: 1rem;
+      }
+      & select {
+        appearance: none;
+        margin-top: 1rem;
+        width: 65%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: var(--contrast2);
+        border: solid 1px var(--grey);
+        font-family: "Orbitron", serif;
+        color: var(--contrast1);
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-image: url("/26.png");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 1rem;
+      }
+      & select:focus {
+        outline: none;
+        border: solid 1px var(--grey);
+        font-family: "Orbitron", serif;
+      }
+      & select option {
+        padding: 1rem;
+        border: none;
+        font-family: "Orbitron", serif;
+      }
+    }
+  }
+}
+@media screen and (min-width: 385px) {
+  .profile {
+    margin-top: 20vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+    width: 100vw;
+    margin: 25vh auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2rem 0 0;
+
+    & .profile-container {
+      width: 100vw;
+      & .mobile-title {
+        display: none;
+        & img.mobile {
+          display: none;
+        }
+      }
+      & .desktop-display {
+        display: flex;
+        align-items: center;
+        border-top: solid 10vh var(--contrast1);
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+        & img.desktop {
+          display: flex;
+          width: 45%;
+          object-fit: cover;
+        }
+        & .desktop-title {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          align-items: center;
+          gap: 3rem;
+          & img {
+            object-fit: contain;
+            width: 8rem;
+          }
+          & h2 {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      & > section > form div {
+        grid-template-columns: 2fr 8fr 1fr;
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      & input {
+        width: 60%;
+        margin-top: 0;
+      }
+      & select {
+        width: 50%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .profile {
+    margin-top: 30vh;
+    & > section > form div {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="48"
+  height="48"
+  fill="#fffefe"
+>
+  <!-- Icône utilisateur -->
+  <circle cx="9" cy="7" r="4" stroke="#fffefe" stroke-width="2" fill="none"/>
+  <path d="M3 21c0-4 3-7 6-7s6 3 6 7" stroke="#fffefe" stroke-width="2" fill="none"/>
+  
+  <!-- Icône œil -->
+  <path d="M15 14c1.5-2 3.5-3 5-3s3.5 1 5 3c-1.5 2-3.5 3-5 3s-3.5-1-5-3z" stroke="#fffefe" stroke-width="2" fill="none"/>
+  <circle cx="20" cy="14" r="1.5" fill="#fffefe"/>
+</svg>

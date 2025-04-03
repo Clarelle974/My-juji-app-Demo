@@ -1,0 +1,109 @@
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: var(--contrast2);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 80vw;
+  animation: openModal 0.3s linear;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 20;
+  max-height: 80vh; /* Ajuste selon besoin */
+  overflow-y: auto;
+  & h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--contrast1);
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & label {
+      display: flex;
+      flex-direction: column;
+    }
+    & input {
+      padding: 0.5rem;
+      font-family: "Saira", serif;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    & select {
+      appearance: none;
+      margin-top: 1rem;
+      width: 65%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: var(--contrast2);
+      border: solid 1px var(--grey);
+      font-family: "Orbitron", serif;
+      color: var(--contrast1);
+      padding: 0.5rem;
+      border-radius: 5px;
+      background-image: url("/26.png");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 1rem;
+    }
+    & select:focus {
+      outline: none;
+      border: solid 1px var(--grey);
+      font-family: "Orbitron", serif;
+    }
+    & select option {
+      padding: 1rem;
+      border: none;
+      font-family: "Orbitron", serif;
+    }
+  }
+}
+
+#modal-content {
+  position: relative;
+  padding: 16px;
+  .actions-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.modal-button.darksquare.bigradius {
+  margin-top: 1rem;
+}
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+::backdrop {
+  background: rgba(243, 243, 243, 0.8);
+  opacity: 0.5;
+}
+
+@keyframes openModal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #modal {
+    width: 50vw;
+  }
+}

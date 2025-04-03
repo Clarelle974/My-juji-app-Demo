@@ -1,0 +1,299 @@
+.programs {
+  section.jaune {
+    background-color: rgb(193, 196, 2);
+    color: rgb(33, 32, 32);
+  }
+  section.verte {
+    background-color: rgb(37, 129, 1);
+    & li {
+      color: white;
+    }
+  }
+  section.orange {
+    background-color: rgb(211, 89, 2);
+    & li {
+      color: white;
+    }
+  }
+  section.bleue {
+    background-color: rgb(33, 1, 129);
+    & li {
+      color: white;
+    }
+  }
+  section.marron {
+    background-color: rgb(46, 16, 1);
+    & li {
+      color: white;
+    }
+  }
+  section.noire {
+    background-color: rgb(0, 0, 0);
+    & li {
+      color: white;
+    }
+  }
+  .ukemi {
+    background: url("/ukemi.png");
+    background-position-y: -30vh;
+  }
+  .atemi {
+    background: url("/atemi.png");
+    background-position-y: -15vh;
+  }
+  .uke-waza {
+    background: url("/uke-waza.png");
+    background-position-y: -7vh;
+  }
+  .tachi-waza {
+    background: url("/tachi-waza.png");
+    background-position-y: -15vh;
+  }
+  .ne-waza {
+    background: url("/ne-waza.png");
+    background-position-y: -22vh;
+  }
+  .dori-waza {
+    background: url("/dori-waza.png");
+    background-position-y: -15vh;
+  }
+}
+
+.program-content {
+  display: flex;
+  background-color: var(--strongcolor);
+  margin: 0 auto;
+  color: var(--contrast2);
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0;
+  & img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.15;
+  }
+  & h3,
+  p,
+  li {
+    margin-left: 0.5rem;
+    font-weight: 600;
+  }
+  & h3 {
+    margin-top: 0.5rem;
+  }
+
+  & ul {
+    list-style-type: square;
+    padding-left: 1rem;
+  }
+  & li {
+    font-family: "Saira", serif;
+    margin: 0.5rem 0 1rem 0;
+    color: var(--contrast1);
+
+    line-height: 1.1rem;
+  }
+  & .anchor-links {
+    z-index: 2;
+    opacity: 0.8;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    & a {
+      flex: 1;
+      align-content: center;
+    }
+  }
+}
+#techniques {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  > li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  & li div.shadow2 {
+    height: 15vh;
+    margin: 2rem 0;
+    background-size: 100%;
+    & h3 {
+      font-weight: 600;
+      color: var(--contrast2);
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 15vh;
+      padding: 3rem 0 0.5rem 0.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+.programs {
+  .techniques-name {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+    gap: 0.5rem;
+    width: 95%;
+    & li {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 0 auto;
+      color: var(--pcolor);
+      border-radius: 5px;
+      border: var(--mediumgrey) 1px solid;
+      &:hover {
+        background-color: var(--pcolor);
+        color: var(--contrast2);
+        border: none;
+        transform: none;
+      }
+      & a {
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        min-width: 100%;
+        border-radius: 5px;
+        font-family: "Saira", serif;
+      }
+    }
+  }
+}
+
+& .sequences-kata-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+  gap: 2rem;
+  > li:first-of-type {
+    background-color: var(--mediumgrey);
+    color: var(--contrast2);
+  }
+  > li:nth-of-type(2) {
+    background-color: var(--mediumcolor);
+    color: var(--contrast2);
+  }
+  > li {
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    & h3 {
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: solid 4px var(--grey);
+    }
+    & h3 a {
+      font-weight: 500;
+      font-size: 1rem;
+      padding-top: 2rem;
+    }
+    & ul {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+      text-align: center;
+      gap: 0.5rem;
+
+      & li a {
+        font-family: "Saira", serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        color: var(--contrast2);
+      }
+      & li a p {
+        color: var(--contrast2);
+      }
+    }
+  }
+}
+& .actions-buttons {
+  margin: 0 auto;
+  & a.light-square {
+    align-content: center;
+  }
+  & .anchor-links {
+    z-index: 2;
+    opacity: 0.8;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    & a {
+      flex: 1;
+      align-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .programs {
+    & .program-content {
+      & h3,
+      p,
+      li {
+        margin-left: 3rem;
+      }
+    }
+  }
+  .programs {
+    .ukemi {
+      background-position-y: -70vh;
+    }
+    .atemi {
+      background-position-y: -50vh;
+    }
+    .uke-waza {
+      background-position-y: -30vh;
+    }
+    .tachi-waza {
+      background-position-y: -30vh;
+    }
+    .ne-waza {
+      background-position-y: -70vh;
+    }
+    .dori-waza {
+      background-position-y: -45vh;
+    }
+  }
+  #techniques {
+    & li div.shadow2 {
+      height: 30vh;
+      & h3 {
+        height: 30vh;
+        padding-top: 5rem;
+      }
+    }
+  }
+  .programs {
+    & .sequences-kata-container {
+      flex-direction: row;
+
+      > li {
+        width: 80%;
+        & ul {
+          & li a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

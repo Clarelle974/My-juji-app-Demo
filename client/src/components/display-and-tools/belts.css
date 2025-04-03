@@ -1,0 +1,40 @@
+.belts {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+
+  & img {
+    width: 2rem;
+    &:hover {
+      box-shadow: 0 0 10px 5px rgba(199, 199, 199, 0.7);
+    }
+  }
+}
+
+.selected {
+  position: relative;
+  width: 3rem;
+  border-radius: 10%;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--mediumcolor);
+}
+
+@media screen and (min-width: 768px) {
+  .belts {
+    width: 85%;
+    margin: 1rem auto;
+  }
+}
